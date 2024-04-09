@@ -5,7 +5,7 @@ import {
     MARK_COMPLETED,
     MARK_INCOMPLETE,
     MARK_ALL_COMPLETED,
-} from "./actionTypes";
+} from "../redux/actionTypes";
 
 const localStorageMiddleware = store => next => action => {
     const result = next(action);
