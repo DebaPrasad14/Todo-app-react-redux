@@ -22,7 +22,7 @@ const TodoList = () => {
                 .includes(searchTerm.toLowerCase());
             return matchesSearch && matchesFilter;
         });
-    });
+    }, [todos, searchTerm, currentFilter]);
 
     const changeFilter = (newFilter) => {
         dispatch(filterTodos(newFilter));
